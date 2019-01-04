@@ -1,0 +1,5 @@
+思路：
+和56题基本一样，先将newInterval添加到intervals，
+将列表intervals进行排序，intervals.sort(key=lambda x: x.start)
+然后使用堆栈保存结果，后面一个数的start要小于前面数的end，则合并
+                   
