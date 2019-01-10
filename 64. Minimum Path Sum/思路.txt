@@ -1,0 +1,4 @@
+思路：
+采用动态规划算法
+起点到达点(i, j)的最小和，即可以分解为起点到点 min_sum{ways[i][j-1]，ways[i-1][j]}
+res[i][j] = min(res[i-1][j],res[i][j-1]) + grid[i][j]
